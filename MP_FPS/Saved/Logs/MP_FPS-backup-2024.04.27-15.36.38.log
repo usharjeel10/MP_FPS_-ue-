@@ -1,0 +1,915 @@
+﻿Log file open, 04/21/24 15:21:38
+LogInit:Display: Running engine for game: MP_FPS
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1589294404) SRandInit(-1589294404).
+LogTaskGraph: Started task graph with 5 named threads and 10 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.179361
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: D:/UE_Setup/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2024.04.21-10.21.39:501][  0]LogInit: Selected Device Profile: [Windows]
+[2024.04.21-10.21.39:501][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2024.04.21-10.21.39:525][  0]LogInit: Computer: DESKTOP-U8N1AB8
+[2024.04.21-10.21.39:525][  0]LogInit: User: usama
+[2024.04.21-10.21.39:525][  0]LogInit: CPU Page size=65536, Cores=6
+[2024.04.21-10.21.39:525][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2024.04.21-10.21.39:525][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2024.04.21-10.21.39:525][  0]LogMemory: Platform Memory Stats for Windows
+[2024.04.21-10.21.39:525][  0]LogMemory: Process Physical Memory: 267.57 MB used, 267.57 MB peak
+[2024.04.21-10.21.39:525][  0]LogMemory: Process Virtual Memory: 259.97 MB used, 259.97 MB peak
+[2024.04.21-10.21.39:525][  0]LogMemory: Physical Memory: 5634.75 MB used,  10674.83 MB free, 16309.58 MB total
+[2024.04.21-10.21.39:525][  0]LogMemory: Virtual Memory: 4765.17 MB used,  10674.83 MB free, 134217728.00 MB total
+[2024.04.21-10.21.39:831][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2024.04.21-10.21.42:049][  0]LogD3D11RHI: D3D11 adapters:
+[2024.04.21-10.21.42:179][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3060' (Feature Level 11_0)
+[2024.04.21-10.21.42:179][  0]LogD3D11RHI:       12129/0/8154 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2024.04.21-10.21.42:180][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2024.04.21-10.21.42:180][  0]LogD3D11RHI:       0/0/8154 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2024.04.21-10.21.42:180][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2024.04.21-10.21.42:186][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2024.04.21-10.21.42:186][  0]LogD3D11RHI:     GPU DeviceId: 0x2504 (for the marketing name, search the web for "GPU Device Id")
+[2024.04.21-10.21.42:186][  0]LogWindows: EnumDisplayDevices:
+[2024.04.21-10.21.42:186][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3060' (P:1 D:1)
+[2024.04.21-10.21.42:186][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3060' (P:0 D:0)
+[2024.04.21-10.21.42:186][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3060' (P:0 D:0)
+[2024.04.21-10.21.42:186][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3060' (P:0 D:0)
+[2024.04.21-10.21.42:186][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2024.04.21-10.21.42:186][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3060
+[2024.04.21-10.21.42:187][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2024.04.21-10.21.42:187][  0]LogD3D11RHI:      Driver Date: Unknown
+[2024.04.21-10.21.42:187][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2024.04.21-10.21.42:273][  0]LogD3D11RHI: Async texture creation enabled
+[2024.04.21-10.21.42:316][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2024.04.21-10.21.42:322][  0]LogShaderCompilers: Guid format shader working directory is 25 characters bigger than the processId version (E:/UEProjects/MP_FPS/Intermediate/Shaders/WorkingDirectory/15024/).
+[2024.04.21-10.21.42:322][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/usama/AppData/Local/Temp/UnrealShaderWorkingDir/1BCB1AB34A7221E35933B3AEDD08650B/'.
+[2024.04.21-10.21.42:322][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2024.04.21-10.21.48:156][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2024.04.21-10.21.48:197][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2024.04.21-10.21.48:238][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2024.04.21-10.21.48:278][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2024.04.21-10.21.48:324][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2024.04.21-10.21.48:366][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2024.04.21-10.21.48:408][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2024.04.21-10.21.48:448][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2024.04.21-10.21.48:480][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2024.04.21-10.21.48:525][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2024.04.21-10.21.48:565][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2024.04.21-10.21.48:606][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2024.04.21-10.21.48:646][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2024.04.21-10.21.48:686][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2024.04.21-10.21.48:728][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2024.04.21-10.21.48:808][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2024.04.21-10.21.48:808][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2024.04.21-10.21.48:834][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2024.04.21-10.21.48:954][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2024.04.21-10.21.48:982][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2024.04.21-10.21.49:022][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2024.04.21-10.21.49:063][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2024.04.21-10.21.49:105][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2024.04.21-10.21.49:149][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2024.04.21-10.21.49:150][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2024.04.21-10.21.49:863][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache: Loaded boot cache 0.10s 50MB C:/Users/usama/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/usama/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/UEProjects/MP_FPS/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/UEProjects/MP_FPS/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2024.04.21-10.21.49:961][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2024.04.21-10.21.49:987][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2024.04.21-10.21.49:999][  0]LogDerivedDataCache: Using Local data cache path C:/Users/usama/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2024.04.21-10.21.50:013][  0]LogSlate: Using Freetype 2.6.0
+[2024.04.21-10.21.50:030][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2024.04.21-10.21.50:030][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2024.04.21-10.21.54:080][  0]LogInit: Selected Device Profile: [Windows]
+[2024.04.21-10.21.54:085][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2024.04.21-10.21.54:274][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2024.04.21-10.21.54:305][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2024.04.21-10.21.54:338][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2024.04.21-10.21.54:338][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2024.04.21-10.21.54:338][  0]LogMeshUtilities: No automatic mesh merging module available
+[2024.04.21-10.21.55:377][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: mp_fps, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 377451576
+[2024.04.21-10.21.55:425][  0]LogAssetRegistry: FAssetRegistry took 0.0234 seconds to start up
+[2024.04.21-10.21.55:470][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.027825 seconds
+[2024.04.21-10.21.55:474][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2024.04.21-10.21.55:474][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2024.04.21-10.21.55:474][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2024.04.21-10.21.55:524][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2024.04.21-10.22.02:324][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2024.04.21-10.22.02:357][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2024.04.21-10.22.02:908][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2024.04.21-10.22.03:254][  0]SourceControl: Info Source control is disabled
+[2024.04.21-10.22.03:302][  0]SourceControl: Info Source control is disabled
+[2024.04.21-10.22.03:340][  0]SourceControl: Info Source control is disabled
+[2024.04.21-10.22.03:378][  0]SourceControl: Info Source control is disabled
+[2024.04.21-10.22.04:455][  0]LogEngine: Initializing Engine...
+[2024.04.21-10.22.04:456][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2024.04.21-10.22.04:642][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2024.04.21-10.22.04:643][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2024.04.21-10.22.04:745][  0]LogAIModule: Creating AISystem for world Untitled
+[2024.04.21-10.22.04:771][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2024.04.21-10.22.04:793][  0]LogInit: FAudioDevice initialized.
+[2024.04.21-10.22.04:818][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/usama/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2024.04.21-10.22.04:824][  0]LogInit: Texture streaming: Enabled
+[2024.04.21-10.22.04:897][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2024.04.21-10.22.04:971][  0]LogInit: Transaction tracking system initialized
+[2024.04.21-10.22.05:229][  0]BlueprintLog: New page: Editor Load
+[2024.04.21-10.22.05:917][  0]LocalizationService: Info Localization service is disabled
+[2024.04.21-10.22.06:468][  0]LogConsoleResponse:Display: 
+[2024.04.21-10.22.06:809][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2024.04.21-10.22.06:809][  0]LogCook:Display: Mobile HDR setting 1
+[2024.04.21-10.22.07:022][  0]LogFileCache: Scanning file cache for directory 'E:/UEProjects/MP_FPS/Content/' took 0.06s
+[2024.04.21-10.22.07:743][  0]SourceControl: Info Source control is disabled
+[2024.04.21-10.22.07:744][  0]Cmd: MAP LOAD FILE="E:/UEProjects/MP_FPS/Content/MP_FPS/Levels/map_001.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2024.04.21-10.22.07:793][  0]LightingResults: New page: Lighting Build
+[2024.04.21-10.22.07:825][  0]MapCheck: New page: Map Check
+[2024.04.21-10.22.07:825][  0]LightingResults: New page: Lighting Build
+[2024.04.21-10.22.11:275][  0]LogStaticMesh: Building static mesh St_Tracer_A...
+[2024.04.21-10.22.11:276][  0]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2024.04.21-10.22.11:277][  0]LogStaticMesh: Built static mesh [0.00s] /Game/MP_FPS/MilitaryWeapSilver/FX/Meshes/St_Tracer_A.St_Tracer_A
+[2024.04.21-10.22.11:280][  0]LogMaterial: Missing cached shader map for material M_Tracer_A, compiling. 
+[2024.04.21-10.22.11:281][  0]LogTemp:Display: Added material ShaderMap 0x00000275813DF900 with Material 0x00000275E6848580 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.11:301][  0]LogTemp:Display: Kicking off shader compilation for M_Tracer_A, GameThreadShaderMap 0x00000275813DF900
+[2024.04.21-10.22.11:308][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.11:351][  0]LogTexture:Display: Building textures: T_Sparks_02 (AutoDXT, 128X512) - 45 MB total VRAM
+[2024.04.21-10.22.11:359][  0]LogTexture:Display: Building textures: T_Pistol_Streaks_01 (AutoDXT, 32X128) - 45 MB total VRAM
+[2024.04.21-10.22.11:363][  0]LogMaterial: Missing cached shader map for material M_Pistol_Streaks_01, compiling. 
+[2024.04.21-10.22.11:364][  0]LogTemp:Display: Added material ShaderMap 0x000002758123FC80 with Material 0x00000275E684BE80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.11:377][  0]LogTemp:Display: Kicking off shader compilation for M_Pistol_Streaks_01, GameThreadShaderMap 0x000002758123FC80
+[2024.04.21-10.22.11:382][  0]LogTexture:Display: Building textures: T_SparkImpacts_2x2_01 (AutoDXT, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.11:461][  0]LogMaterial: Missing cached shader map for material M_SparksImpact_2x2_01, compiling. 
+[2024.04.21-10.22.11:462][  0]LogTemp:Display: Added material ShaderMap 0x0000027580AA7900 with Material 0x00000275E5B86500 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.11:477][  0]LogTemp:Display: Kicking off shader compilation for M_SparksImpact_2x2_01, GameThreadShaderMap 0x0000027580AA7900
+[2024.04.21-10.22.11:493][  0]LogTexture:Display: Building textures: T_Spherical_NormalMap_01 (BC5, 1024X1024) - 45 MB total VRAM
+[2024.04.21-10.22.12:272][  0]LogTexture:Display: Building textures: T_Smoke_8x8_B_01 (AutoDXT, 4096X4096) - 45 MB total VRAM
+[2024.04.21-10.22.16:145][  0]LogMaterial: Missing cached shader map for material M_Smoke_8x8_B_01, compiling. 
+[2024.04.21-10.22.16:146][  0]LogTemp:Display: Added material ShaderMap 0x0000027581F46E80 with Material 0x00000275E5BB8E80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.16:189][  0]LogTemp:Display: Kicking off shader compilation for M_Smoke_8x8_B_01, GameThreadShaderMap 0x0000027581F46E80
+[2024.04.21-10.22.16:196][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.16:241][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/ThirdPersonJump_Start.ThirdPersonJump_Start
+[2024.04.21-10.22.16:254][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/ThirdPersonJump_Loop.ThirdPersonJump_Loop
+[2024.04.21-10.22.16:271][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/ThirdPersonJump_End.ThirdPersonJump_End
+[2024.04.21-10.22.16:333][  0]LogStaticMesh: Building static mesh St_Sphere_01...
+[2024.04.21-10.22.16:335][  0]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2024.04.21-10.22.16:347][  0]LogStaticMesh: Built static mesh [0.01s] /Game/MP_FPS/MilitaryWeapSilver/FX/Meshes/St_Sphere_01.St_Sphere_01
+[2024.04.21-10.22.16:351][  0]LogMaterial: Missing cached shader map for material M_GlowSphere_01, compiling. 
+[2024.04.21-10.22.16:352][  0]LogTemp:Display: Added material ShaderMap 0x000002759B789D00 with Material 0x00000275F98B0A00 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.16:372][  0]LogTemp:Display: Kicking off shader compilation for M_GlowSphere_01, GameThreadShaderMap 0x000002759B789D00
+[2024.04.21-10.22.16:407][  0]LogTexture:Display: Building textures: T_Pistol_Smoke_2x2_A (AutoDXT, 1024X1024) - 45 MB total VRAM
+[2024.04.21-10.22.16:798][  0]LogTexture:Display: Building textures: T_FL_Detail_01 (BGRA8, 1024X1024) - 45 MB total VRAM
+[2024.04.21-10.22.16:881][  0]LogMaterial: Missing cached shader map for material M_Pistol_Smoke_2x2_A, compiling. 
+[2024.04.21-10.22.16:882][  0]LogTemp:Display: Added material ShaderMap 0x0000027585080100 with Material 0x00000275E63AB580 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.16:926][  0]LogTemp:Display: Kicking off shader compilation for M_Pistol_Smoke_2x2_A, GameThreadShaderMap 0x0000027585080100
+[2024.04.21-10.22.16:933][  0]LogTexture:Display: Building textures: T_AssaultRifle_MuzzleFlashes_01 (AutoDXT, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.16:975][  0]LogMaterial: Missing cached shader map for material M_AssaultRifle_MuzzleFlash_4x1, compiling. 
+[2024.04.21-10.22.16:976][  0]LogTemp:Display: Added material ShaderMap 0x00000275822CA400 with Material 0x00000275E5BF6F80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.16:992][  0]LogTemp:Display: Kicking off shader compilation for M_AssaultRifle_MuzzleFlash_4x1, GameThreadShaderMap 0x00000275822CA400
+[2024.04.21-10.22.16:999][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:039][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2024.04.21-10.22.17:040][  0]LogTemp:Display: Added material ShaderMap 0x00000275834B5D00 with Material 0x00000275E5BF5D80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.17:084][  0]LogTemp:Display: Kicking off shader compilation for M_UE4Man_Body, GameThreadShaderMap 0x00000275834B5D00
+[2024.04.21-10.22.17:091][  0]LogTexture:Display: Building textures: UE4Man_Logo_N (BC5, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:128][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_D (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:221][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_N (BC5, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:264][  0]LogTexture:Display: Building textures: T_ML_Aluminum01 (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:352][  0]LogTexture:Display: Building textures: T_ML_Aluminum01_N (BC5, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.17:397][  0]LogTexture:Display: Building textures: UE4_Mannequin_MAT_MASKA (AutoDXT, 1024X1024) - 45 MB total VRAM
+[2024.04.21-10.22.17:662][  0]LogTexture:Display: Building textures: UE4_Mannequin__normals (BC5, 2048X2048) - 45 MB total VRAM
+[2024.04.21-10.22.18:003][  0]LogTexture:Display: Building textures: UE4_Mannequin_occlusion_Mobile (DXT1, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.18:074][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2024.04.21-10.22.18:077][  0]LogTemp:Display: Added material ShaderMap 0x0000027583955D00 with Material 0x00000275E6446F80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.18:168][  0]LogTemp:Display: Kicking off shader compilation for M_UE4Man_Body, GameThreadShaderMap 0x0000027583955D00
+[2024.04.21-10.22.18:170][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2024.04.21-10.22.18:173][  0]LogTemp:Display: Added material ShaderMap 0x000002758B60E080 with Material 0x00000275E62CD900 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.18:253][  0]LogTemp:Display: Kicking off shader compilation for M_UE4Man_Body, GameThreadShaderMap 0x000002758B60E080
+[2024.04.21-10.22.18:396][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Walk_Rt_Rifle_Ironsights.Walk_Rt_Rifle_Ironsights
+[2024.04.21-10.22.18:399][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Walk_Lt_Rifle_Ironsights.Walk_Lt_Rifle_Ironsights
+[2024.04.21-10.22.18:401][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Walk_Fwd_Rifle_Ironsights.Walk_Fwd_Rifle_Ironsights
+[2024.04.21-10.22.18:404][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Walk_Bwd_Rifle_Ironsights.Walk_Bwd_Rifle_Ironsights
+[2024.04.21-10.22.18:448][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Sprint_Fwd_Rifle.Sprint_Fwd_Rifle
+[2024.04.21-10.22.18:450][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Sprint_Fwd_Jump.Sprint_Fwd_Jump
+[2024.04.21-10.22.18:450][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/FP_Jump.FP_Jump
+[2024.04.21-10.22.18:452][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Fire_Rifle_Ironsights.Fire_Rifle_Ironsights
+[2024.04.21-10.22.18:453][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Anim_Offset/IronSight_CU.IronSight_CU
+[2024.04.21-10.22.18:456][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Anim_Offset/IronSight_CD.IronSight_CD
+[2024.04.21-10.22.18:456][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Idle_Rifle_Ironsights.Idle_Rifle_Ironsights
+[2024.04.21-10.22.18:464][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MP_FPS/AnimStarterPack/Anim_Offset/IronSight_CC.IronSight_CC
+[2024.04.21-10.22.18:561][  0]LogTexture:Display: Building textures: crosshair (AutoDXT, 512X512) - 45 MB total VRAM
+[2024.04.21-10.22.18:700][  0]LogMaterial: Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.
+[2024.04.21-10.22.18:701][  0]LogTemp:Display: Added material ShaderMap 0x0000027587A0F900 with Material 0x00000275879E7400 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.22:382][  0]LogTemp:Display: Finished compile of shader map 0x0000027587A0F900
+[2024.04.21-10.22.22:382][  0]LogTemp:Display: Shader map WorldGridMaterial complete, GameThreadShaderMap 0x0000027587A0F900, marking material WorldGridMaterial as finished
+[2024.04.21-10.22.22:382][  0]LogTemp:Display: Marking material as finished 0x00000275879E7400
+[2024.04.21-10.22.22:390][  0]LogTexture:Display: Building textures: Texture2D_0 (BGRA8, 512X512) - 46 MB total VRAM
+[2024.04.21-10.22.22:436][  0]LogTexture:Display: Building textures: T_Pistol_MuzzleFlashes_4x1_B (AutoDXT, 1024X512) - 46 MB total VRAM
+[2024.04.21-10.22.22:585][  0]LogMaterial: Missing cached shader map for material M_Pistol_MuzzleFlash_4x1_A, compiling. 
+[2024.04.21-10.22.22:586][  0]LogTemp:Display: Added material ShaderMap 0x0000027584113C80 with Material 0x00000275E5FF8700 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.22:601][  0]LogTemp:Display: Kicking off shader compilation for M_Pistol_MuzzleFlash_4x1_A, GameThreadShaderMap 0x0000027584113C80
+[2024.04.21-10.22.22:606][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1, 512X512) - 46 MB total VRAM
+[2024.04.21-10.22.22:802][  0]LogTexture:Display: Building textures: Assault_Rifle_A_Norm (BC5, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.23:306][  0]LogTexture:Display: Building textures: Assault_Rifle_A_masks (AutoDXT, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.24:620][  0]LogTexture:Display: Building textures: Assault_Rifle_A_Diff (AutoDXT, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.25:818][  0]LogMaterial: Missing cached shader map for material M_WeaponMaster_01, compiling. 
+[2024.04.21-10.22.25:819][  0]LogTemp:Display: Added material ShaderMap 0x00000275885D2400 with Material 0x00000275E6442C80 to ShaderMapsBeingCompiled
+[2024.04.21-10.22.25:869][  0]LogTemp:Display: Kicking off shader compilation for M_WeaponMaster_01, GameThreadShaderMap 0x00000275885D2400
+[2024.04.21-10.22.26:134][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:138][  0]LogTexture:Display: Building textures: HQ_Lightmap0_10 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:145][  0]LogTexture:Display: Building textures: HQ_Lightmap0_11 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:151][  0]LogTexture:Display: Building textures: HQ_Lightmap0_12 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:155][  0]LogTexture:Display: Building textures: HQ_Lightmap0_13 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:160][  0]LogTexture:Display: Building textures: HQ_Lightmap0_14 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:167][  0]LogTexture:Display: Building textures: HQ_Lightmap0_15 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:176][  0]LogTexture:Display: Building textures: HQ_Lightmap0_16 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:180][  0]LogTexture:Display: Building textures: HQ_Lightmap0_17 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:184][  0]LogTexture:Display: Building textures: HQ_Lightmap0_18 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:192][  0]LogTexture:Display: Building textures: HQ_Lightmap0_19 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:196][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:198][  0]LogTexture:Display: Building textures: HQ_Lightmap0_20 (AutoDXT, 128X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:200][  0]LogTexture:Display: Building textures: HQ_Lightmap0_21 (AutoDXT, 128X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:201][  0]LogTexture:Display: Building textures: HQ_Lightmap0_22 (AutoDXT, 64X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:202][  0]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:206][  0]LogTexture:Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:210][  0]LogTexture:Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:216][  0]LogTexture:Display: Building textures: HQ_Lightmap0_6 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:220][  0]LogTexture:Display: Building textures: HQ_Lightmap0_7 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:225][  0]LogTexture:Display: Building textures: HQ_Lightmap0_8 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:232][  0]LogTexture:Display: Building textures: HQ_Lightmap0_9 (AutoDXT, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:244][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:257][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_10 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:270][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_11 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:286][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_12 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:309][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_13 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:323][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_14 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:341][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_15 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:356][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_16 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:370][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_17 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:401][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_18 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:421][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_19 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:436][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:450][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_20 (DXT1, 128X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:465][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_21 (DXT1, 128X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:479][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_22 (DXT1, 64X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:488][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:505][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_4 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:526][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_5 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:548][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_6 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:565][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_7 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:578][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_8 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:589][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_9 (DXT1, 256X256) - 46 MB total VRAM
+[2024.04.21-10.22.26:601][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:602][  0]LogTexture:Display: Building textures: SkyOcclusion0_10 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:604][  0]LogTexture:Display: Building textures: SkyOcclusion0_11 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:605][  0]LogTexture:Display: Building textures: SkyOcclusion0_12 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:607][  0]LogTexture:Display: Building textures: SkyOcclusion0_13 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:608][  0]LogTexture:Display: Building textures: SkyOcclusion0_14 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:610][  0]LogTexture:Display: Building textures: SkyOcclusion0_15 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:611][  0]LogTexture:Display: Building textures: SkyOcclusion0_16 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:613][  0]LogTexture:Display: Building textures: SkyOcclusion0_17 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:615][  0]LogTexture:Display: Building textures: SkyOcclusion0_18 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:620][  0]LogTexture:Display: Building textures: SkyOcclusion0_19 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:623][  0]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:626][  0]LogTexture:Display: Building textures: SkyOcclusion0_20 (AutoDXT, 128X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:626][  0]LogTexture:Display: Building textures: SkyOcclusion0_21 (AutoDXT, 128X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:627][  0]LogTexture:Display: Building textures: SkyOcclusion0_22 (AutoDXT, 64X32) - 46 MB total VRAM
+[2024.04.21-10.22.26:629][  0]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:631][  0]LogTexture:Display: Building textures: SkyOcclusion0_4 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:632][  0]LogTexture:Display: Building textures: SkyOcclusion0_5 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:634][  0]LogTexture:Display: Building textures: SkyOcclusion0_6 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:637][  0]LogTexture:Display: Building textures: SkyOcclusion0_7 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:646][  0]LogTexture:Display: Building textures: SkyOcclusion0_8 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:651][  0]LogTexture:Display: Building textures: SkyOcclusion0_9 (AutoDXT, 256X128) - 46 MB total VRAM
+[2024.04.21-10.22.26:652][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:653][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:654][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_10 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:654][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_11 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:655][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_12 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:656][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_13 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:657][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_14 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:657][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_15 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:658][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_16 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:659][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_17 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:659][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_18 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:660][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_19 (G8, 128X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:661][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:661][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_20 (G8, 128X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:662][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_21 (G8, 32X32) - 46 MB total VRAM
+[2024.04.21-10.22.26:662][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:663][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_4 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:663][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_5 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:664][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_6 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:665][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_7 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:665][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_8 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:666][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_9 (G8, 256X64) - 46 MB total VRAM
+[2024.04.21-10.22.26:905][  0]LogTexture:Display: Building textures: Pistols_A_Norm (BC5, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.27:498][  0]LogTexture:Display: Building textures: Pistols_A_Masks (AutoDXT, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.28:549][  0]LogTexture:Display: Building textures: Pistols_A_Diff (AutoDXT, 2048X2048) - 46 MB total VRAM
+[2024.04.21-10.22.30:066][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST06...
+[2024.04.21-10.22.30:145][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST03...
+[2024.04.21-10.22.30:182][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST04...
+[2024.04.21-10.22.30:233][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST05...
+[2024.04.21-10.22.30:272][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface01...
+[2024.04.21-10.22.30:286][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface02...
+[2024.04.21-10.22.30:296][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface06...
+[2024.04.21-10.22.30:317][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface05...
+[2024.04.21-10.22.30:331][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface04...
+[2024.04.21-10.22.30:347][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Rifle_ImpactSurface03...
+[2024.04.21-10.22.30:364][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST06...
+[2024.04.21-10.22.30:432][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST02...
+[2024.04.21-10.22.30:481][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire_ST01...
+[2024.04.21-10.22.30:521][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire06...
+[2024.04.21-10.22.30:541][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire05...
+[2024.04.21-10.22.30:579][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire04...
+[2024.04.21-10.22.30:613][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire03...
+[2024.04.21-10.22.30:644][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire05...
+[2024.04.21-10.22.30:681][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire04...
+[2024.04.21-10.22.30:714][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire03...
+[2024.04.21-10.22.30:771][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire02...
+[2024.04.21-10.22.30:821][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire01...
+[2024.04.21-10.22.30:846][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire06...
+[2024.04.21-10.22.30:900][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST03...
+[2024.04.21-10.22.30:980][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST04...
+[2024.04.21-10.22.31:051][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST05...
+[2024.04.21-10.22.31:112][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST02...
+[2024.04.21-10.22.31:175][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave PistolA_Fire_ST01...
+[2024.04.21-10.22.31:220][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire02...
+[2024.04.21-10.22.31:258][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave RifleA_Fire01...
+[2024.04.21-10.22.31:315][  0]LogAIModule: Creating AISystem for world map_001
+[2024.04.21-10.22.31:343][  0]LogTemp:Display: Finished compile of shader map 0x00000275813DF900
+[2024.04.21-10.22.31:343][  0]LogTemp:Display: Shader map M_Tracer_A complete, GameThreadShaderMap 0x00000275813DF900, marking material M_Tracer_A as finished
+[2024.04.21-10.22.31:343][  0]LogTemp:Display: Marking material as finished 0x00000275E6848580
+[2024.04.21-10.22.31:373][  0]LogTemp:Display: Finished compile of shader map 0x000002758123FC80
+[2024.04.21-10.22.31:373][  0]LogTemp:Display: Shader map M_Pistol_Streaks_01 complete, GameThreadShaderMap 0x000002758123FC80, marking material M_Pistol_Streaks_01 as finished
+[2024.04.21-10.22.31:373][  0]LogTemp:Display: Marking material as finished 0x00000275E684BE80
+[2024.04.21-10.22.31:384][  0]LogTemp:Display: Finished compile of shader map 0x0000027580AA7900
+[2024.04.21-10.22.31:384][  0]LogTemp:Display: Shader map M_SparksImpact_2x2_01 complete, GameThreadShaderMap 0x0000027580AA7900, marking material M_SparksImpact_2x2_01 as finished
+[2024.04.21-10.22.31:384][  0]LogTemp:Display: Marking material as finished 0x00000275E5B86500
+[2024.04.21-10.22.31:419][  0]LogTemp:Display: Finished compile of shader map 0x0000027581F46E80
+[2024.04.21-10.22.31:419][  0]LogTemp:Display: Shader map M_Smoke_8x8_B_01 complete, GameThreadShaderMap 0x0000027581F46E80, marking material M_Smoke_8x8_B_01 as finished
+[2024.04.21-10.22.31:419][  0]LogTemp:Display: Marking material as finished 0x00000275E5BB8E80
+[2024.04.21-10.22.31:434][  0]LogTemp:Display: Finished compile of shader map 0x000002759B789D00
+[2024.04.21-10.22.31:434][  0]LogTemp:Display: Shader map M_GlowSphere_01 complete, GameThreadShaderMap 0x000002759B789D00, marking material M_GlowSphere_01 as finished
+[2024.04.21-10.22.31:434][  0]LogTemp:Display: Marking material as finished 0x00000275F98B0A00
+[2024.04.21-10.22.31:469][  0]LogTemp:Display: Finished compile of shader map 0x0000027585080100
+[2024.04.21-10.22.31:469][  0]LogTemp:Display: Shader map M_Pistol_Smoke_2x2_A complete, GameThreadShaderMap 0x0000027585080100, marking material M_Pistol_Smoke_2x2_A as finished
+[2024.04.21-10.22.31:469][  0]LogTemp:Display: Marking material as finished 0x00000275E63AB580
+[2024.04.21-10.22.31:479][  0]LogTemp:Display: Finished compile of shader map 0x00000275822CA400
+[2024.04.21-10.22.31:479][  0]LogTemp:Display: Shader map M_AssaultRifle_MuzzleFlash_4x1 complete, GameThreadShaderMap 0x00000275822CA400, marking material M_AssaultRifle_MuzzleFlash_4x1 as finished
+[2024.04.21-10.22.31:479][  0]LogTemp:Display: Marking material as finished 0x00000275E5BF6F80
+[2024.04.21-10.22.31:504][  0]LogTemp:Display: Finished compile of shader map 0x00000275834B5D00
+[2024.04.21-10.22.31:505][  0]LogTemp:Display: Shader map M_UE4Man_Body complete, GameThreadShaderMap 0x00000275834B5D00, marking material M_UE4Man_Body as finished
+[2024.04.21-10.22.31:505][  0]LogTemp:Display: Marking material as finished 0x00000275E5BF5D80
+[2024.04.21-10.22.31:611][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2024.04.21-10.22.31:618][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2024.04.21-10.22.31:738][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 119.833ms to complete.
+[2024.04.21-10.22.31:738][  0]LogFileHelpers: Loading map 'map_001' took 23.994
+[2024.04.21-10.22.32:789][  0]LogCollectionManager: Loaded 0 collections in 0.001697 seconds
+[2024.04.21-10.22.32:881][  0]LogFileCache: Scanning file cache for directory 'E:/UEProjects/MP_FPS/Saved/Collections/' took 0.01s
+[2024.04.21-10.22.32:881][  0]LogFileCache: Scanning file cache for directory 'E:/UEProjects/MP_FPS/Content/Developers/usama/Collections/' took 0.01s
+[2024.04.21-10.22.32:881][  0]LogFileCache: Scanning file cache for directory 'E:/UEProjects/MP_FPS/Content/Collections/' took 0.01s
+[2024.04.21-10.22.32:881][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000009 seconds
+[2024.04.21-10.22.32:894][  0]LogContentBrowser: Native class hierarchy populated in 0.0122 seconds. Added 2245 classes and 453 folders.
+[2024.04.21-10.22.32:969][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2024.04.21-10.22.33:662][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2024.04.21-10.22.33:711][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2024.04.21-10.22.33:986][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2024.04.21-10.22.34:000][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2024.04.21-10.22.34:078][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2024.04.21-10.22.34:078][  0]LogLoad: (Engine Initialization) Total time: 58.74 seconds
+[2024.04.21-10.22.34:079][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.35 seconds
+[2024.04.21-10.22.34:079][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2024.04.21-10.22.34:419][  0]LogOcInput: OculusInput pre-init called
+[2024.04.21-10.22.34:422][  0]LogTemp:Display: Finished compile of shader map 0x0000027584113C80
+[2024.04.21-10.22.34:422][  0]LogTemp:Display: Shader map M_Pistol_MuzzleFlash_4x1_A complete, GameThreadShaderMap 0x0000027584113C80, marking material M_Pistol_MuzzleFlash_4x1_A as finished
+[2024.04.21-10.22.34:422][  0]LogTemp:Display: Marking material as finished 0x00000275E5FF8700
+[2024.04.21-10.22.34:438][  0]LogTemp:Display: Finished compile of shader map 0x000002758B60E080
+[2024.04.21-10.22.34:439][  0]LogTemp:Display: Shader map M_UE4Man_Body complete, GameThreadShaderMap 0x000002758B60E080, marking material M_UE4Man_Body as finished
+[2024.04.21-10.22.34:439][  0]LogTemp:Display: Marking material as finished 0x00000275E62CD900
+[2024.04.21-10.22.34:459][  0]LogTemp:Display: Finished compile of shader map 0x0000027583955D00
+[2024.04.21-10.22.34:459][  0]LogTemp:Display: Shader map M_UE4Man_Body complete, GameThreadShaderMap 0x0000027583955D00, marking material M_UE4Man_Body as finished
+[2024.04.21-10.22.34:459][  0]LogTemp:Display: Marking material as finished 0x00000275E6446F80
+[2024.04.21-10.22.34:489][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2024.04.21-10.22.34:497][  0]LogSlate: Took 0.005362 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2024.04.21-10.22.34:506][  0]LogSlate: Took 0.005450 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2024.04.21-10.22.34:517][  0]LogSlate: Took 0.007086 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.04.21-10.22.34:657][  0]LogSlate: Took 0.005079 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2024.04.21-10.22.34:774][  1]LogAssetRegistry: Asset discovery search completed in 39.3720 seconds
+[2024.04.21-10.22.34:774][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000009 seconds (found 0 objects)
+[2024.04.21-10.22.34:774][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000275 seconds (updated 0 objects)
+[2024.04.21-10.22.34:822][  1]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:2).
+[2024.04.21-10.22.34:922][  2]LogRenderer: Reallocating scene render targets to support 1200x472 NumSamples 1 (Frame:3).
+[2024.04.21-10.22.35:429][  3]LogTemp:Display: Finished compile of shader map 0x00000275885D2400
+[2024.04.21-10.22.35:429][  3]LogTemp:Display: Shader map M_WeaponMaster_01 complete, GameThreadShaderMap 0x00000275885D2400, marking material M_WeaponMaster_01 as finished
+[2024.04.21-10.22.35:429][  3]LogTemp:Display: Marking material as finished 0x00000275E6442C80
+[2024.04.21-10.22.35:448][  3]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2024.04.21-10.23.29:018][451]LogRenderer: Reallocating scene render targets to support 1200x476 NumSamples 1 (Frame:394).
+[2024.04.21-10.23.29:102][453]LogRenderer: Reallocating scene render targets to support 1200x504 NumSamples 1 (Frame:398).
+[2024.04.21-10.23.29:140][454]LogRenderer: Reallocating scene render targets to support 1200x512 NumSamples 1 (Frame:400).
+[2024.04.21-10.23.29:184][456]LogRenderer: Reallocating scene render targets to support 1200x516 NumSamples 1 (Frame:402).
+[2024.04.21-10.23.29:259][458]LogRenderer: Reallocating scene render targets to support 1200x524 NumSamples 1 (Frame:406).
+[2024.04.21-10.23.29:339][460]LogRenderer: Reallocating scene render targets to support 1200x532 NumSamples 1 (Frame:410).
+[2024.04.21-10.23.29:376][461]LogRenderer: Reallocating scene render targets to support 1200x540 NumSamples 1 (Frame:412).
+[2024.04.21-10.23.30:813][628]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2024.04.21-10.23.30:823][628]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.21-10.23.30:826][628]PIE: New page: PIE session: map_001 (Apr 21, 2024, 8:23:30 PM)
+[2024.04.21-10.23.30:827][628]LogPlayLevel: Creating play world package: /Game/MP_FPS/Levels/UEDPIE_1_map_001
+[2024.04.21-10.23.30:836][628]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009720s)
+[2024.04.21-10.23.30:837][628]LogAIModule: Creating AISystem for world map_001
+[2024.04.21-10.23.30:837][628]LogPlayLevel: PIE: World Init took: (0.000705s)
+[2024.04.21-10.23.30:837][628]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MP_FPS/Levels/map_001.map_001 to /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001 (0.010903s)
+[2024.04.21-10.23.30:870][628]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2024.04.21-10.23.30:879][628]LogInit: FAudioDevice initialized.
+[2024.04.21-10.23.30:938][628]LogLoad: Game class is 'GM_MP_FPS_C'
+[2024.04.21-10.23.30:942][628]LogWorld: Bringing World /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001 up for play (max tick rate 0) at 2024.04.21-15.23.30
+[2024.04.21-10.23.30:943][628]LogWorld: Bringing up level for play took: 0.002837
+[2024.04.21-10.23.30:974][628]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2024.04.21-10.23.30:978][628]LogInit: WinSock: Socket queue 131072 / 131072
+[2024.04.21-10.23.30:981][628]LogInit: WinSock: I am DESKTOP-U8N1AB8 (192.168.100.3:0)
+[2024.04.21-10.23.30:981][628]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.04.21-10.23.30:981][628]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2024.04.21-10.23.30:984][628]LogBlueprintUserMessages: [HUD_MP_FPS_C_0] Server: Hello
+[2024.04.21-10.23.30:987][628]PIE: Info Play in editor start time for /Game/MP_FPS/Levels/UEDPIE_1_map_001 0.551
+[2024.04.21-10.23.30:989][628]PIE: New page: PIE session: map_001 (Apr 21, 2024, 8:23:30 PM)
+[2024.04.21-10.23.31:035][628]LogNet: Browse: 127.0.0.1//Game/MP_FPS/Levels/map_001
+[2024.04.21-10.23.31:035][628]LogInit: WinSock: Socket queue 32768 / 32768
+[2024.04.21-10.23.31:035][628]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.04.21-10.23.31:036][628]LogNet: Game client on port 7777, rate 10000
+[2024.04.21-10.23.31:036][628]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: mp_fps, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 4161651169
+[2024.04.21-10.23.31:036][628]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: PendingNetDriver IpNetDriver_1, IsServer: NO, PC: NULL, Owner: NULL
+[2024.04.21-10.23.31:038][628]PIE: Info Play in editor start time for /Game/MP_FPS/Levels/map_001 0.602
+[2024.04.21-10.23.31:043][628]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:53637
+[2024.04.21-10.23.31:043][628]LogHandshake: SendConnectChallenge. Timestamp: 0.008334, Cookie: 077131027150005252067241207220193018191107082242069185197184
+[2024.04.21-10.23.31:075][628]LogHandshake: SendChallengeResponse. Timestamp: 0.008334, Cookie: 077131027150005252067241207220193018191107082242069185197184
+[2024.04.21-10.23.31:100][628]LogRenderer: Reallocating scene render targets to support 1200x548 NumSamples 1 (Frame:562).
+[2024.04.21-10.23.31:160][629]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:53637
+[2024.04.21-10.23.31:160][629]LogNet: Server accepting post-challenge connection from: 127.0.0.1:53637
+[2024.04.21-10.23.31:160][629]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.04.21-10.23.31:160][629]LogNet: NotifyAcceptedConnection: Name: map_001, TimeStamp: 04/21/24 15:23:31, [UNetConnection] RemoteAddr: 127.0.0.1:53637, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2024.04.21-10.23.31:160][629]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:53637, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2024.04.21-10.23.31:161][629]LogNet: NotifyAcceptingChannel Control 0 server World /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001: Accepted
+[2024.04.21-10.23.31:161][629]LogNet: Remote platform little endian=1
+[2024.04.21-10.23.31:161][629]LogNet: This platform little endian=1
+[2024.04.21-10.23.31:175][630]LogNet: Login request: /Game/MP_FPS/Levels/map_001 userId: Invalid
+[2024.04.21-10.23.31:176][630]LogNet: Welcomed by server (Level: /Game/MP_FPS/Levels/UEDPIE_1_map_001, Game: /Game/MP_FPS/BluePrints/GM_MP_FPS.GM_MP_FPS_C)
+[2024.04.21-10.23.31:176][630]LogLoad: LoadMap: 127.0.0.1//Game/MP_FPS/Levels/UEDPIE_1_map_001?game=/Game/MP_FPS/BluePrints/GM_MP_FPS.GM_MP_FPS_C
+[2024.04.21-10.23.31:185][630]Cmd: MEM
+[2024.04.21-10.23.31:193][630]LogMemory: Platform Memory Stats for Windows
+[2024.04.21-10.23.31:193][630]LogMemory: Process Physical Memory: 1426.34 MB used, 1702.86 MB peak
+[2024.04.21-10.23.31:193][630]LogMemory: Process Virtual Memory: 2188.14 MB used, 2362.52 MB peak
+[2024.04.21-10.23.31:193][630]LogMemory: Physical Memory: 7990.97 MB used,  8318.61 MB free, 16309.58 MB total
+[2024.04.21-10.23.31:193][630]LogMemory: Virtual Memory: 7434.24 MB used,  8318.61 MB free, 134217728.00 MB total
+[2024.04.21-10.23.31:193][630]LogMemory: 
+[2024.04.21-10.23.31:193][630]Allocator Stats for TBB: (not implemented)
+[2024.04.21-10.23.31:203][630]LogAIModule: Creating AISystem for world map_001
+[2024.04.21-10.23.31:206][630]LogWorld: Bringing World /Game/MP_FPS/Levels/UEDPIE_2_map_001.map_001 up for play (max tick rate 0) at 2024.04.21-15.23.31
+[2024.04.21-10.23.31:206][630]LogWorld: Bringing up level for play took: 0.001886
+[2024.04.21-10.23.31:206][630]LogLoad: Took 0.029166 seconds to LoadMap(/Game/MP_FPS/Levels/UEDPIE_1_map_001)
+[2024.04.21-10.23.31:221][631]LogNet: Client netspeed is 10000
+[2024.04.21-10.23.31:221][631]LogNet: Join request: /Game/MP_FPS/Levels/map_001?SplitscreenCount=1
+[2024.04.21-10.23.31:225][631]LogNet: Join succeeded: 257
+[2024.04.21-10.23.31:389][646]LogBlueprintUserMessages: [HUD_MP_FPS_C_0] Client 1: Hello
+[2024.04.21-10.23.35:556][122]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_2 NOT Supported.
+[2024.04.21-10.23.35:744][141]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_5 NOT Supported.
+[2024.04.21-10.23.35:907][156]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_8 NOT Supported.
+[2024.04.21-10.23.36:210][190]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_5 NOT Supported.
+[2024.04.21-10.23.36:210][190]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_8 NOT Supported.
+[2024.04.21-10.23.36:297][200]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_11 NOT Supported.
+[2024.04.21-10.23.36:374][208]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_8 NOT Supported.
+[2024.04.21-10.23.36:374][208]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_11 NOT Supported.
+[2024.04.21-10.23.36:555][228]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_11 NOT Supported.
+[2024.04.21-10.23.36:640][238]LogBlueprintUserMessages: [BP_Character_Master_C_1] Server: Hello
+[2024.04.21-10.23.36:652][239]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_14 NOT Supported.
+[2024.04.21-10.23.36:959][275]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_14 NOT Supported.
+[2024.04.21-10.23.37:226][306]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_17 NOT Supported.
+[2024.04.21-10.23.37:259][310]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_17 NOT Supported.
+[2024.04.21-10.23.37:553][344]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_20 NOT Supported.
+[2024.04.21-10.23.37:688][359]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_23 NOT Supported.
+[2024.04.21-10.23.37:803][372]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_26 NOT Supported.
+[2024.04.21-10.23.37:842][376]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_20 NOT Supported.
+[2024.04.21-10.23.37:842][376]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_23 NOT Supported.
+[2024.04.21-10.23.37:842][376]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_26 NOT Supported.
+[2024.04.21-10.23.38:137][410]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_23 NOT Supported.
+[2024.04.21-10.23.38:137][410]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_26 NOT Supported.
+[2024.04.21-10.23.38:195][416]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_29 NOT Supported.
+[2024.04.21-10.23.38:319][430]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_26 NOT Supported.
+[2024.04.21-10.23.38:319][430]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_29 NOT Supported.
+[2024.04.21-10.23.38:458][446]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_29 NOT Supported.
+[2024.04.21-10.23.38:577][460]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_32 NOT Supported.
+[2024.04.21-10.23.38:838][491]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_32 NOT Supported.
+[2024.04.21-10.23.38:921][500]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_35 NOT Supported.
+[2024.04.21-10.23.39:217][534]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_35 NOT Supported.
+[2024.04.21-10.23.39:338][548]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_38 NOT Supported.
+[2024.04.21-10.23.39:586][575]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_38 NOT Supported.
+[2024.04.21-10.23.39:663][583]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_41 NOT Supported.
+[2024.04.21-10.23.39:971][619]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_41 NOT Supported.
+[2024.04.21-10.23.40:626][695]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_44 NOT Supported.
+[2024.04.21-10.23.41:052][744]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_47 NOT Supported.
+[2024.04.21-10.23.41:291][771]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_47 NOT Supported.
+[2024.04.21-10.23.41:419][786]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_50 NOT Supported.
+[2024.04.21-10.23.41:675][816]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_50 NOT Supported.
+[2024.04.21-10.23.42:326][891]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_53 NOT Supported.
+[2024.04.21-10.23.42:761][941]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_56 NOT Supported.
+[2024.04.21-10.23.42:982][966]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_56 NOT Supported.
+[2024.04.21-10.23.43:254][997]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_59 NOT Supported.
+[2024.04.21-10.23.43:410][ 15]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_59 NOT Supported.
+[2024.04.21-10.23.43:687][ 47]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_62 NOT Supported.
+[2024.04.21-10.23.43:909][ 73]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_62 NOT Supported.
+[2024.04.21-10.23.44:152][101]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_65 NOT Supported.
+[2024.04.21-10.23.44:286][117]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_65 NOT Supported.
+[2024.04.21-10.23.44:699][166]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_68 NOT Supported.
+[2024.04.21-10.23.44:807][179]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_68 NOT Supported.
+[2024.04.21-10.23.45:151][220]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_71 NOT Supported.
+[2024.04.21-10.23.45:368][246]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_71 NOT Supported.
+[2024.04.21-10.23.45:689][284]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_74 NOT Supported.
+[2024.04.21-10.23.45:799][297]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_74 NOT Supported.
+[2024.04.21-10.23.46:245][349]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_77 NOT Supported.
+[2024.04.21-10.23.46:287][354]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_77 NOT Supported.
+[2024.04.21-10.23.46:539][384]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_80 NOT Supported.
+[2024.04.21-10.23.46:721][405]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_83 NOT Supported.
+[2024.04.21-10.23.46:865][422]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_86 NOT Supported.
+[2024.04.21-10.23.46:899][426]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_80 NOT Supported.
+[2024.04.21-10.23.46:899][426]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_83 NOT Supported.
+[2024.04.21-10.23.46:899][426]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_86 NOT Supported.
+[2024.04.21-10.23.47:003][438]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_89 NOT Supported.
+[2024.04.21-10.23.47:197][461]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_83 NOT Supported.
+[2024.04.21-10.23.47:197][461]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_86 NOT Supported.
+[2024.04.21-10.23.47:197][461]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_89 NOT Supported.
+[2024.04.21-10.23.47:356][479]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_86 NOT Supported.
+[2024.04.21-10.23.47:356][479]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_89 NOT Supported.
+[2024.04.21-10.23.47:356][479]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_92 NOT Supported.
+[2024.04.21-10.23.47:490][495]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_89 NOT Supported.
+[2024.04.21-10.23.47:490][495]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_92 NOT Supported.
+[2024.04.21-10.23.47:633][512]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_92 NOT Supported.
+[2024.04.21-10.23.47:701][520]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_95 NOT Supported.
+[2024.04.21-10.23.47:995][555]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_95 NOT Supported.
+[2024.04.21-10.23.48:885][659]LogBlueprintUserMessages: [BP_Character_Master_C_1] Server: Hello
+[2024.04.21-10.23.48:886][659]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_98 NOT Supported.
+[2024.04.21-10.23.49:371][716]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_101 NOT Supported.
+[2024.04.21-10.23.49:538][736]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_101 NOT Supported.
+[2024.04.21-10.23.49:880][777]LogBlueprintUserMessages: [BP_Character_Master_C_1] Server: Hello
+[2024.04.21-10.23.49:881][777]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_104 NOT Supported.
+[2024.04.21-10.23.50:012][792]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_104 NOT Supported.
+[2024.04.21-10.23.50:360][833]LogBlueprintUserMessages: [BP_Character_Master_C_1] Server: Hello
+[2024.04.21-10.23.50:370][834]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_107 NOT Supported.
+[2024.04.21-10.23.50:520][852]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_107 NOT Supported.
+[2024.04.21-10.23.51:108][922]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_109 NOT Supported.
+[2024.04.21-10.23.51:463][964]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_111 NOT Supported.
+[2024.04.21-10.23.51:640][985]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_113 NOT Supported.
+[2024.04.21-10.23.51:766][  0]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_111 NOT Supported.
+[2024.04.21-10.23.51:766][  0]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_113 NOT Supported.
+[2024.04.21-10.23.51:900][ 16]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_115 NOT Supported.
+[2024.04.21-10.23.52:068][ 36]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_113 NOT Supported.
+[2024.04.21-10.23.52:068][ 36]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_115 NOT Supported.
+[2024.04.21-10.23.52:278][ 61]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_117 NOT Supported.
+[2024.04.21-10.23.52:294][ 63]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_115 NOT Supported.
+[2024.04.21-10.23.52:294][ 63]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_117 NOT Supported.
+[2024.04.21-10.23.52:539][ 92]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_117 NOT Supported.
+[2024.04.21-10.23.52:583][ 97]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_120 NOT Supported.
+[2024.04.21-10.23.52:891][134]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_120 NOT Supported.
+[2024.04.21-10.23.52:992][146]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_123 NOT Supported.
+[2024.04.21-10.23.53:188][169]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_123 NOT Supported.
+[2024.04.21-10.23.53:617][220]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_126 NOT Supported.
+[2024.04.21-10.23.54:260][297]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_128 NOT Supported.
+[2024.04.21-10.23.54:637][342]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_130 NOT Supported.
+[2024.04.21-10.23.54:863][369]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_130 NOT Supported.
+[2024.04.21-10.23.54:964][381]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_133 NOT Supported.
+[2024.04.21-10.23.55:250][415]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_133 NOT Supported.
+[2024.04.21-10.23.55:445][438]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_136 NOT Supported.
+[2024.04.21-10.23.55:617][458]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_136 NOT Supported.
+[2024.04.21-10.23.55:922][494]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_138 NOT Supported.
+[2024.04.21-10.23.56:091][514]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_138 NOT Supported.
+[2024.04.21-10.23.56:392][550]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_141 NOT Supported.
+[2024.04.21-10.23.56:534][567]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_141 NOT Supported.
+[2024.04.21-10.23.58:178][764]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_144 NOT Supported.
+[2024.04.21-10.23.58:678][824]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_147 NOT Supported.
+[2024.04.21-10.23.58:837][843]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_147 NOT Supported.
+[2024.04.21-10.23.59:072][871]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_150 NOT Supported.
+[2024.04.21-10.23.59:314][900]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_150 NOT Supported.
+[2024.04.21-10.23.59:407][911]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_153 NOT Supported.
+[2024.04.21-10.23.59:723][949]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_153 NOT Supported.
+[2024.04.21-10.24.00:018][984]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_156 NOT Supported.
+[2024.04.21-10.24.00:059][989]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_156 NOT Supported.
+[2024.04.21-10.24.00:530][ 45]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_158 NOT Supported.
+[2024.04.21-10.24.00:647][ 59]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_158 NOT Supported.
+[2024.04.21-10.24.01:358][144]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_161 NOT Supported.
+[2024.04.21-10.24.02:157][240]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_163 NOT Supported.
+[2024.04.21-10.24.02:750][311]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_165 NOT Supported.
+[2024.04.21-10.24.02:809][318]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_165 NOT Supported.
+[2024.04.21-10.24.04:676][541]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: ParticleSystemComponent /Game/MP_FPS/Levels/UEDPIE_1_map_001.map_001:PersistentLevel.BPC_AssaultRiffle_C_0.ParticleSystemComponent_168 NOT Supported.
+[2024.04.21-10.24.06:713][768]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:53637, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None
+[2024.04.21-10.24.06:713][768]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:53637, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None, Channels: 2, Time: 2024.04.21-10.24.06
+[2024.04.21-10.24.06:713][768]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:53637, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None
+[2024.04.21-10.24.06:713][768]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None
+[2024.04.21-10.24.06:713][768]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None, Channels: 2, Time: 2024.04.21-10.24.06
+[2024.04.21-10.24.06:713][768]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None
+[2024.04.21-10.24.06:717][768]LogExit: GameNetDriver None shut down
+[2024.04.21-10.24.06:717][768]LogExit: GameNetDriver None shut down
+[2024.04.21-10.42.02:687][656]Cmd: QUIT_EDITOR
+[2024.04.21-10.42.03:527][656]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2024.04.21-10.42.03:547][656]LogExit: Preparing to exit.
+[2024.04.21-10.42.04:134][656]LogExit: Editor shut down
+[2024.04.21-10.42.04:134][656]LogExit: Transaction tracking system shut down
+[2024.04.21-10.42.04:222][656]LogObj: Freed 0b from 0 cluster array pools.
+[2024.04.21-10.42.04:222][656]LogExit: Object subsystem successfully closed.
+[2024.04.21-10.42.04:246][656]LogD3D11RHI: Shutdown
+[2024.04.21-10.42.04:246][656]LogD3D11RHI: CleanupD3DDevice
+[2024.04.21-10.42.04:314][656]LogD3D11RHI: ~FD3D11DynamicRHI
+[2024.04.21-10.42.04:331][656]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2024.04.21-10.42.04:332][656]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2024.04.21-10.42.04:332][656]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2024.04.21-10.42.04:332][656]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2024.04.21-10.42.04:332][656]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2024.04.21-10.42.04:332][656]LogDirectoryWatcher: A directory notification for 'D:/UE_Setup/UE_4.15/FeaturePacks/' was aborted.
+[2024.04.21-10.42.04:333][656]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2024.04.21-10.42.04:333][656]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2024.04.21-10.42.04:333][656]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2024.04.21-10.42.04:334][656]LogDirectoryWatcher: A directory notification for 'E:/UEProjects/MP_FPS/Content/Collections/' was aborted.
+[2024.04.21-10.42.04:334][656]LogDirectoryWatcher: A directory notification for 'E:/UEProjects/MP_FPS/Content/Developers/usama/Collections/' was aborted.
+[2024.04.21-10.42.04:334][656]LogDirectoryWatcher: A directory notification for 'E:/UEProjects/MP_FPS/Saved/Collections/' was aborted.
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2024.04.21-10.42.04:334][656]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2024.04.21-10.42.04:335][656]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2024.04.21-10.42.04:335][656]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2024.04.21-10.42.04:336][656]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2024.04.21-10.42.04:336][656]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2024.04.21-10.42.04:336][656]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module Media (443)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2024.04.21-10.42.04:337][656]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2024.04.21-10.42.04:338][656]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2024.04.21-10.42.04:338][656]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2024.04.21-10.42.04:339][656]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2024.04.21-10.42.04:339][656]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2024.04.21-10.42.04:339][656]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2024.04.21-10.42.04:339][656]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2024.04.21-10.42.04:339][656]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2024.04.21-10.42.04:997][656]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2024.04.21-10.42.04:997][656]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2024.04.21-10.42.04:997][656]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2024.04.21-10.42.05:008][656]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2024.04.21-10.42.05:009][656]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2024.04.21-10.42.05:009][656]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2024.04.21-10.42.05:009][656]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2024.04.21-10.42.05:010][656]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2024.04.21-10.42.05:010][656]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2024.04.21-10.42.05:010][656]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2024.04.21-10.42.05:010][656]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2024.04.21-10.42.05:011][656]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2024.04.21-10.42.05:011][656]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2024.04.21-10.42.05:011][656]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2024.04.21-10.42.05:011][656]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2024.04.21-10.42.05:011][656]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2024.04.21-10.42.05:012][656]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2024.04.21-10.42.05:012][656]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2024.04.21-10.42.05:012][656]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2024.04.21-10.42.05:012][656]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2024.04.21-10.42.05:012][656]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2024.04.21-10.42.05:013][656]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2024.04.21-10.42.05:013][656]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2024.04.21-10.42.05:014][656]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2024.04.21-10.42.05:014][656]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2024.04.21-10.42.05:046][656]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2024.04.21-10.42.05:046][656]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2024.04.21-10.42.05:046][656]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2024.04.21-10.42.05:047][656]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2024.04.21-10.42.05:047][656]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2024.04.21-10.42.05:048][656]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2024.04.21-10.42.05:049][656]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2024.04.21-10.42.05:049][656]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2024.04.21-10.42.05:049][656]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2024.04.21-10.42.05:051][656]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2024.04.21-10.42.05:051][656]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2024.04.21-10.42.05:051][656]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2024.04.21-10.42.05:051][656]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2024.04.21-10.42.05:052][656]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2024.04.21-10.42.05:053][656]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2024.04.21-10.42.05:053][656]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2024.04.21-10.42.05:179][656]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2024.04.21-10.42.05:180][656]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2024.04.21-10.42.05:182][656]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2024.04.21-10.42.05:183][656]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2024.04.21-10.42.05:184][656]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2024.04.21-10.42.05:184][656]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2024.04.21-10.42.05:184][656]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2024.04.21-10.42.05:185][656]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2024.04.21-10.42.05:187][656]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2024.04.21-10.42.05:188][656]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2024.04.21-10.42.05:188][656]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2024.04.21-10.42.05:188][656]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2024.04.21-10.42.05:188][656]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2024.04.21-10.42.05:189][656]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2024.04.21-10.42.05:189][656]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2024.04.21-10.42.05:189][656]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2024.04.21-10.42.05:289][656]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2024.04.21-10.42.05:391][656]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2024.04.21-10.42.05:391][656]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2024.04.21-10.42.05:391][656]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2024.04.21-10.42.05:391][656]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2024.04.21-10.42.05:391][656]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2024.04.21-10.42.05:392][656]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2024.04.21-10.42.05:392][656]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2024.04.21-10.42.05:393][656]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2024.04.21-10.42.05:394][656]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2024.04.21-10.42.05:394][656]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2024.04.21-10.42.05:395][656]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2024.04.21-10.42.05:395][656]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2024.04.21-10.42.05:396][656]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2024.04.21-10.42.05:396][656]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2024.04.21-10.42.05:397][656]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2024.04.21-10.42.05:397][656]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2024.04.21-10.42.05:397][656]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2024.04.21-10.42.05:398][656]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2024.04.21-10.42.05:398][656]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module Core (154)
+[2024.04.21-10.42.05:400][656]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2024.04.21-10.42.05:583][656]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2024.04.21-10.42.05:583][656]LogDirectoryWatcher: A directory notification for 'E:/UEProjects/MP_FPS/Content/' was aborted.
+[2024.04.21-10.42.05:583][656]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2024.04.21-10.42.05:583][656]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2024.04.21-10.42.05:584][656]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2024.04.21-10.42.05:625][656]LogDerivedDataCache: Shutdown
+[2024.04.21-10.42.05:625][656]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2024.04.21-10.42.05:625][656]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2024.04.21-10.42.05:625][656]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2024.04.21-10.42.05:626][656]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2024.04.21-10.42.05:627][656]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2024.04.21-10.42.05:628][656]LogOnline:Display: Unloading online subsystem: NULL
+[2024.04.21-10.42.05:628][656]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2024.04.21-10.42.05:629][656]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2024.04.21-10.42.05:629][656]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2024.04.21-10.42.05:629][656]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B074272D6-45AA-C433-7877-53B7F53A5171%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=053f83da48a622880735dbb28f2c40bb%7Cc97869a31efe43bf9f53b8f0a4ada424%7Cc8fc6de8-ba23-41dd-ab83-fb901d15c8d1&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2024.04.21-10.42.05:643][656]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2024.04.21-10.42.05:645][656]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2024.04.21-10.42.05:645][656]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2024.04.21-10.42.05:645][656]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2024.04.21-10.42.05:645][656]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2024.04.21-10.42.05:645][656]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2024.04.21-10.42.05:646][656]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2024.04.21-10.42.05:647][656]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2024.04.21-10.42.05:649][656]LogExit: Exiting.
+[2024.04.21-10.42.05:650][656]Log file closed, 04/21/24 15:42:05
